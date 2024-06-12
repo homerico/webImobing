@@ -1,14 +1,17 @@
-import json
-import os
-
+from src.webImobing.utils.file_handler import FileHandler
 from utils.logger import logger
 
+
 class Configuration:
-    def __init__(self, file_name):
-        settings_dir = os.path.join(os.path.dirname(__file__), "..", "..", "settings")
-        file_path = os.path.join(settings_dir, file_name)
+    def __init__(self, file_name: str):
+        raw_config = FileHandler.load_settings(file_name)
 
-        logger.info(f"Classe Configuration criada usando o arquivo {file_name}")
+        self.scrapers = []
+        self.scraper_config = {}
+        for key, value in raw_config.items():
+            if key == "imobiliarias":
+                self.scrapers = value
+            else:
+                self.scraper_config[key] = value
 
-        self.config = json.load(open(file_path, 'r'))
-        logger.debug(f"Configuração carregada: \n{self.config}")
+        logger.info(f"Configuração criada a partir do arquivo {file_name}")
