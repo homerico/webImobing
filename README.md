@@ -14,6 +14,12 @@ Os sites escolhidos foram [OLX](https://www.olx.com.br/),
 [Giacomelli](https://www.giacomelli.com.br/) e 
 [Crédito Real](https://www.creditoreal.com.br/).
 
+### Estrutura do Projeto
+
+Os dados obtidos dos sites de anúncios de imóveis são armazenados em arquivos JSON, na 
+pasta "data". Na pasta "settings" se encontram os arquivos de configuração dos sites, 
+basicamente é onde se deve preencher as informações para a filtragem dos imóveis, como o 
+valor, tamanho e até quantidade de vagas. O código, por sua vez, fica em "src".
 
 ### Dependências
 
@@ -29,6 +35,8 @@ Para instalar as dependências do projeto, basta executar o comando abaixo:
 ```bash
 make install
 ```
+Obs.: Caso dê algum problema com a ativação do venv, é recomendado deletar a pasta do venv
+e executar o comando novamente.
 
 ### Execução
 
