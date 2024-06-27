@@ -2,7 +2,7 @@ from src.webImobing.scraper.ScraperConfiguration import ScraperConfiguration
 from src.webImobing.utils.FileHandler import FileHandler
 from utils.Logger import logger
 from src.webImobing.scraper.Creditoreal import CreditoReal
-from src.webImobing.scraper.Giancomelli import Giancomelli
+from src.webImobing.scraper.Giacomelli import Giacomelli
 from src.webImobing.scraper.Ibagy import Ibagy
 from src.webImobing.scraper.Olx import Olx
 
@@ -12,7 +12,7 @@ class Configuration:
         Olx.IDENTIFIER: Olx,
         Ibagy.IDENTIFIER: Ibagy,
         CreditoReal.IDENTIFIER: CreditoReal,
-        Giancomelli.IDENTIFIER: Giancomelli
+        Giacomelli.IDENTIFIER: Giacomelli
     }
 
     scraper_config = ScraperConfiguration()

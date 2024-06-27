@@ -5,8 +5,9 @@ class UrlBuilder:
     PARAM_DELIMITER = "&"
 
     # O params será uma list de dict
-    params = list()
-    endpoints = list()
+    def __init__(self):
+        self.params = list()
+        self.endpoints = list()
 
     def add_base_url(self, base_url: str):
         self.base_url = base_url
@@ -32,7 +33,7 @@ class UrlBuilder:
         url = (self.base_url +
                self.DIRECTORY_DELIMITER +
                self.DIRECTORY_DELIMITER.join(self.endpoints) +
-               self.QUERY_DELIMITER +
+               (self.QUERY_DELIMITER if (len(self.params) > 0) else self.DIRECTORY_DELIMITER) +
                self.PARAM_DELIMITER.join(
                    [f"{list(param.keys())[0]}={list(param.values())[0]}" for param in self.params]))
 

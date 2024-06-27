@@ -3,18 +3,21 @@ class Constants:
     OLX = "olx"
     IBAGY = "ibagy"
     CREDITOREAL = "creditoreal"
-    GIANCOMELLI = "giancomelli"
+    GIACOMELLI = "giacomelli"
 
     # URL base dos sites
     URL_BASE = {
         OLX: "https://www.olx.com.br",
         IBAGY: "https://www.ibagy.com.br",
         CREDITOREAL: "https://www.creditoreal.com.br",
-        GIANCOMELLI: "https://www.giancomelli.com.br"
+        GIACOMELLI: "https://www.giacomelli.com.br"
     }
 
     # Intervalos de valores da área na OLX
     AREA_INTERVALS_OLX = [0, 30, 60, 90, 120, 150, 180, 200, 250, 300, 400, 500]
+
+    # robots.txt da OLX
+    OLX_ROBOTS = "https://www.olx.com.br/robots.txt"
 
     # Mapeamento dos parâmetros dos links
     PARAMS_MAP = {
@@ -34,17 +37,17 @@ class Constants:
             "vagas": "gsp"
         },
         IBAGY: {
-            "val_min": 0,
-            "val_max": 2000,
-            "tipos": ["apartamento"],
-            "area_min": 0,
-            "area_max": -1,
-            "quartos_min": 0,
-            "quartos_max": -1,
-            "banheiros_min": 0,
-            "banheiros_max": -1,
-            "vagas_min": 1,
-            "vagas_max": -1
+            "apartamento": "apartamentos",
+            "casa": "casas",
+            "kitnet": "kitnets",
+            "studio": "studios",
+            "val_min": "min-",
+            "val_max": "max-",
+            "area_min": "area-min-",
+            "area_max": "area-max-",
+            "quarto": "dormitorios",
+            "banheiro": "banheiros",
+            "vagas": "garagens"
         },
         CREDITOREAL: {
             "val_min": 0,
@@ -59,7 +62,7 @@ class Constants:
             "vagas_min": 1,
             "vagas_max": -1
         },
-        GIANCOMELLI: {
+        GIACOMELLI: {
             "val_min": 0,
             "val_max": 2000,
             "tipos": ["apartamento"],

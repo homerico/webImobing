@@ -11,7 +11,7 @@ obter nota necessária para passsar na disciplina de Tópicos Especiais em Gerê
 
 Os sites escolhidos inicialmente foram [OLX](https://www.olx.com.br/), 
 [Ibagy](https://ibagy.com.br/), 
-[Giancomelli](https://www.giacomelli.com.br/) e 
+[Giacomelli](https://www.giacomelli.com.br/) e 
 [Crédito Real](https://www.creditoreal.com.br/).
 
 

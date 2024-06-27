@@ -4,9 +4,9 @@ import os
 
 class FileHandler:
     @staticmethod
-    def save_file(file, path):
-        with open(path, 'wb') as f:
-            f.write(file)
+    def save_file(file_name, path, content):
+        with open(os.path.join(path, file_name), 'wb') as f:
+            f.write(content)
 
     @staticmethod
     def read_file(path):
