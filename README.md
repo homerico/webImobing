@@ -9,7 +9,7 @@ aluguel de imóveis na região de Florianópolis-SC, demonstrando habilidade o b
 obter nota necessária para passsar na disciplina de Tópicos Especiais em Gerência de Dados 
 (INE5454), ministrada pela profa. Carina Friedrich Dorneles. 
 
-Os sites escolhidos inicialmente foram [OLX](https://www.olx.com.br/), 
+Os sites escolhidos foram [OLX](https://www.olx.com.br/), 
 [Ibagy](https://ibagy.com.br/), 
 [Giacomelli](https://www.giacomelli.com.br/) e 
 [Crédito Real](https://www.creditoreal.com.br/).

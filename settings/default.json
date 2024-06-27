@@ -1,13 +1,4 @@
 {
   "imobiliarias" : [ "olx", "ibagy", "creditoreal", "giacomelli"],
-  "tipos" : ["apartamento", "casa"],
-  "val_min" : 0,
-  "val_max" : 2000,
-  "area_min" : 0,
-  "area_max" : 350,
-  "quartos_min" : 0,
-  "quartos_max" : -1,
-  "banheiros_min" : 0,
-  "banheiros_max" : -1,
-  "vagas" : 1
+  "tipos" : ["apartamento", "casa"]
 }

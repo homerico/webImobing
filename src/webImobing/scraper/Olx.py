@@ -36,8 +36,13 @@ class Olx(GenericScraper):
                 for tipo in value:
                     self.url_builder.add_param(Constants.PARAMS_MAP[self.IDENTIFIER][key],
                                                Constants.PARAMS_MAP[self.IDENTIFIER][tipo])
-            elif (value >= 5 and (key == "banheiros_max" or key == "banheiros_min" or
-                                  key == "quartos_max" or key == "quartos_min" or key == "vagas")):
+            elif key == "quartos":
+                self.url_builder.add_param(Constants.PARAMS_MAP[self.IDENTIFIER]["quartos_min"], value if value < 5 else "5")
+                self.url_builder.add_param(Constants.PARAMS_MAP[self.IDENTIFIER]["quartos_max"], value if value < 5 else "5")
+            elif key == "banheiros":
+                self.url_builder.add_param(Constants.PARAMS_MAP[self.IDENTIFIER]["banheiros_min"], value if value < 5 else "5")
+                self.url_builder.add_param(Constants.PARAMS_MAP[self.IDENTIFIER]["banheiros_max"], value if value < 5 else "5")
+            elif key == "vagas" and value >= 5:
                 self.url_builder.add_param(Constants.PARAMS_MAP[self.IDENTIFIER][key], "5")
             elif key == "area_max" or key == "area_min":
                 for mapped_area, area in enumerate(Constants.AREA_INTERVALS_OLX):

@@ -37,6 +37,31 @@ class Constants:
             "vagas": "gsp"
         },
         IBAGY: {
+            "val_min": 0,
+            "val_max": 2000,
+            "tipos": ["apartamento"],
+            "area_min": 0,
+            "area_max": -1,
+            "quartos_min": 0,
+            "quartos_max": -1,
+            "banheiros_min": 0,
+            "banheiros_max": -1,
+            "vagas_min": 1,
+            "vagas_max": -1
+        },
+        CREDITOREAL: {
+            "tipos": "imovelTypes",
+            "apartamento": "Apartamento",
+            "casa": "Casa",
+            "val_min": "initialValue",
+            "val_max": "finalValue",
+            "area_min": "areaInitialValue",
+            "area_max": "areaFinalValue",
+            "quartos": "bedrooms",
+            "banheiros": "bathrooms",
+            "vagas": "parking"
+        },
+        GIACOMELLI: {
             "apartamento": "apartamentos",
             "casa": "casas",
             "kitnet": "kitnets",
@@ -48,31 +73,5 @@ class Constants:
             "quarto": "dormitorios",
             "banheiro": "banheiros",
             "vagas": "garagens"
-        },
-        CREDITOREAL: {
-            "val_min": 0,
-            "val_max": 2000,
-            "tipos": ["apartamento"],
-            "area_min": 0,
-            "area_max": -1,
-            "quartos_min": 0,
-            "quartos_max": -1,
-            "banheiros_min": 0,
-            "banheiros_max": -1,
-            "vagas_min": 1,
-            "vagas_max": -1
-        },
-        GIACOMELLI: {
-            "val_min": 0,
-            "val_max": 2000,
-            "tipos": ["apartamento"],
-            "area_min": 0,
-            "area_max": -1,
-            "quartos_min": 0,
-            "quartos_max": -1,
-            "banheiros_min": 0,
-            "banheiros_max": -1,
-            "vagas_min": 1,
-            "vagas_max": -1
         }
     }
